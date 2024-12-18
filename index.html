@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <title>Snitt check</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Snitt</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <p>Reset når "sjekk snitt" blir trykket:</p>
-  <input checked id="check" type="checkbox"/>
-  
-  <div>
-    <p>Engelsk: <input placeholder="5/5" class="fag" type="number" inputmode="numeric"></p>
-    <p>KRLE: <input placeholder="4/4" class="fag" type="number" inputmode="numeric"></p>
-    <p>Kroppsøving: <input placeholder="4/5" class="fag" type="number" inputmode="numeric"></p>
-    <p>Kunst & handverk: <input placeholder="4/5" class="fag" type="number" inputmode="numeric"></p>
-    <p>Mat & helse: <input placeholder="4/5" class="fag" type="number" inputmode="numeric"></p>
-    <p>Matematikk: <input placeholder="6/6" class="fag" type="number" inputmode="numeric"></p>
-    <p>Musikk: <input placeholder="4/5" class="fag" type="number" inputmode="numeric"></p>
-    <p>Naturfag: <input placeholder="6/6" class="fag" type="number" inputmode="numeric"></p>
-    <p>Norsk skriftlig: <input placeholder="4/4" class="fag" type="number" inputmode="numeric"></p>
-    <p>Norsk muntlig: <input placeholder="4/4" class="fag" type="number" inputmode="numeric"></p>
-    <p>Valgfag(f.eks. programmering): <input placeholder="6/6" class="fag" type="number" inputmode="numeric"></p>
-    <p>Samfunnsfag: <input placeholder="4/4" class="fag" type="number" inputmode="numeric"></p>
-    <p>Tysk: <input placeholder="4/5" class="fag" type="number" inputmode="numeric"></p>
-  </div>
-
-  <h2 id="showSnitt"></h2>
-  
-  <button id="snittBTN">Sjekk snitt</button>
-  
-  <script src="script.js"></script>
+    <h1>Regn ut snittet ditt (8, 9 og 10-ene)</h1>
+    <p>(Fyll ut de karakterende du har)</p>
+    <p>(IV = 0 og stryk = 1)</p>
+    <hr>
+    <hr>
+    <div id="interactive">
+        <div id="inputs">
+            <input id="reset" type="button" value="Reset">
+            <div>Engelsk: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>KRLE: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Kroppsøving: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Kunst & håndverk: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Matematikk: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Musikk: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Naturfag: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Norsk skriftlig hov.: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Norsk skriftlig sid.: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Norsk muntlig: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Samfunnsfag: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Mat & helse: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Språkfag: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <br>
+            <div>Valgfag 1: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Valgfag 2: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Valgfag 3: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <br>
+            <div>Eksamen 1: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Eksamen 2: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+            <div>Eksamen 3: <input type="number" class="grade-input" inputmode="numeric" placeholder="Karakter"></div>
+        </div>
+        <div id="result">
+            <h2 id="error-message"></h2>
+            <p>Snitt: <span id="avarage"></span></p>
+            <p>Poeng: <span id="points"></span></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
-
 </html>
