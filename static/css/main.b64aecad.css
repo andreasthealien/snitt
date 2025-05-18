@@ -1,2 +1,0 @@
-*{font-family:sans-serif;margin:0;padding:0}ul{box-sizing:border-box;padding:0 1em}#grade-list{display:flex;flex-direction:column;gap:5px;width:375px}.subject-div{display:flex;flex-direction:row;justify-content:space-between}.subject-div label{width:65%}.subject-div input{padding:2px;width:30%}#god-father{display:flex;justify-content:center;width:100%}#actual-father{display:flex;flex-direction:column;gap:10px;width:375px}@media (max-width:767px){#actual-father,#grade-list{width:280px}}
-/*# sourceMappingURL=main.b64aecad.css.map*/
