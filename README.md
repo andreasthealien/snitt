@@ -1,2 +1,2 @@
-# snitt
-Calculate your snitt here
+# Snitt
+Regn ut snittet ditt her.
